@@ -9,7 +9,7 @@ const { generateOTP, sendOTPEmail } = require('./otpUtil');
 const User = require('./models/User');
 
 const multer = require('multer');
-const path = require('path');
+const path =  process.env.PORT || 5000;
 
 const fs = require('fs');
 
